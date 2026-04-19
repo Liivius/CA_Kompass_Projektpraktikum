@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CA-Kompass</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <h1>CA-Kompass</h1>
+      </div>
+      <div class="topbar-actions">
+        <button id="restartTop" class="ghost-btn" type="button">Neu starten</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside id="sidebar" class="sidebar card hidden">
+        <div class="sidebar-section">
+          <div class="progress-meta">
+            <span>Fortschritt</span>
+            <span id="progressLabel">0 / 13</span>
+          </div>
+          <div class="progress-track" aria-hidden="true">
+            <div id="progressBar" class="progress-bar"></div>
+          </div>
+        </div>
+
+        <div class="sidebar-section">
+          <h3>Ausgewählte Antworten</h3>
+          <ul id="answerSummary" class="answer-summary empty-state-list">
+            <li>Noch keine Antworten ausgewählt.</li>
+          </ul>
+        </div>
+      </aside>
+
+      <section class="main-panel card">
+        <div id="conversation" class="conversation" aria-live="polite"></div>
+
+        <div id="controls" class="controls hidden">
+          <button id="backBtn" class="ghost-btn" type="button">Zurück</button>
+          <button id="restartBtn" class="ghost-btn" type="button">Neu starten</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <template id="systemBubbleTemplate">
+    <div class="bubble-row system-row">
+      <div class="bubble system-bubble"></div>
+    </div>
+  </template>
+
+  <template id="userBubbleTemplate">
+    <div class="bubble-row user-row">
+      <div class="bubble user-bubble"></div>
+    </div>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
