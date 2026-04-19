@@ -1,0 +1,976 @@
+<mxfile host="app.diagrams.net" agent="OpenAI" pages="7">
+  <diagram id="diag-2" name="00_Master">
+    <mxGraphModel dx="2282" dy="1248" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3400" pageHeight="2200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;" value="Entscheidungsmodell für CA-Typ &amp; Persona-Stufe" vertex="1">
+          <mxGeometry height="60" width="1040" x="1180" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;verticalAlign=top;" value="⚠ Funktion vor Persona&lt;br&gt;&lt;br&gt;Persona ist Aufsatz, nicht Fundament. Erst wenn der Chatbot Anfragen zuverlässig versteht, korrekt beantwortet und stabil läuft, lohnt sich die Ausgestaltung der Persona." vertex="1">
+          <mxGeometry height="150" width="620" x="40" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;verticalAlign=top;" value="&lt;b&gt;Dominanzregeln / KO-Regeln&lt;/b&gt;&lt;br&gt;• F7 = A „klares System“ → Hard-Lock Stufe 0&lt;br&gt;• F7 = D + F13 = C/D → Deckel auf Stufe 2&lt;br&gt;• F10 = A (sensible Themen regelmäßig) → Deckel auf Stufe 2 für Memory-Features&lt;br&gt;• Voice-Pfade tendieren konservativer als Text-Pfade" vertex="1">
+          <mxGeometry height="160" width="640" x="700" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;Stufen-relevante Fragen&lt;/b&gt;&lt;br&gt;F1 Aufgabe · F2 Kanal · F4 Emotionslage · F5 Nutzungsfrequenz · F6 Markenrelevanz · F7 Persönlichkeitsgrad · F12 Interaktionsdauer · F13 Wiedererkennung" vertex="1">
+          <mxGeometry height="120" width="620" x="1380" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;" value="&lt;b&gt;Modifikatoren nach der Stufenwahl&lt;/b&gt;&lt;br&gt;F3 Zielgruppe · F8 Schnell vs. gut behandelt · F9 Eskalation · F10 sensible Themen · F11 Projektstand" vertex="1">
+          <mxGeometry height="120" width="620" x="2040" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=center;verticalAlign=middle;" value="Frage 1&lt;br&gt;&lt;b&gt;Was ist die Hauptaufgabe?&lt;/b&gt;" vertex="1">
+          <mxGeometry height="120" width="560" x="1420" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;" value="&lt;b&gt;Zweig I · Informationsbot&lt;/b&gt;&lt;br&gt;Default: Stufe 0–1&lt;br&gt;Aufwertung durch: Marke, emotionale Anfragen, Memory" vertex="1">
+          <mxGeometry height="140" width="500" x="220" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;" value="&lt;b&gt;Zweig II · Transaktionsbot&lt;/b&gt;&lt;br&gt;Default: Stufe 0–1&lt;br&gt;Aufwertung durch: Marke, emotionale Transaktionen, Wiederkehr &amp; Memory" vertex="1">
+          <mxGeometry height="150" width="500" x="860" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;Zweig III · Beratungsbot&lt;/b&gt;&lt;br&gt;Default: Stufe 2&lt;br&gt;Aufwertung zu Stufe 3 bei regelmäßiger Nutzung + Memory + Rechtsraum geklärt" vertex="1">
+          <mxGeometry height="150" width="500" x="1500" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;Zweig IV · Support / Beschwerde&lt;/b&gt;&lt;br&gt;Default: Stufe 2&lt;br&gt;Empathie indirekt: Tonalität + schnelle Lösung, nicht gespielte Gefühle" vertex="1">
+          <mxGeometry height="150" width="500" x="2140" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="13" edge="1" parent="1" source="8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="9" value="A · Fragen beantworten">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="14" edge="1" parent="1" source="8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="10" value="B · Vorgänge abwickeln">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1410" y="360" />
+              <mxPoint x="1410" y="390" />
+              <mxPoint x="1110" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" edge="1" parent="1" source="8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="11" value="C · Beraten">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="16" edge="1" parent="1" source="8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="12" value="D · Beschwerden &amp; Support">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#666666;align=left;verticalAlign=top;" value="&lt;b&gt;Stufe 0 · Ohne Persona&lt;/b&gt;&lt;br&gt;Rein funktional. Sinnvoll bei klaren Standard- oder Transaktionsfällen, wenn Persönlichkeit keinen Zusatznutzen bringt." vertex="1">
+          <mxGeometry height="120" width="560" x="120" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;" value="&lt;b&gt;Stufe 1 · Minimale Persona&lt;/b&gt;&lt;br&gt;Name + höflicher Grundton + klare KI-Kennzeichnung. Default-Empfehlung bei vielen alltagsnahen Use Cases." vertex="1">
+          <mxGeometry height="120" width="560" x="760" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;Stufe 2 · Ausgeprägte Persona&lt;/b&gt;&lt;br&gt;Markenstimme, konsistenter Stil, kalibrierte Empathie, situative Anpassung an Zielgruppe und Gesprächslage." vertex="1">
+          <mxGeometry height="120" width="560" x="1400" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;verticalAlign=top;" value="&lt;b&gt;Stufe 3 · Voll adaptive Persona&lt;/b&gt;&lt;br&gt;Persistente Wiedererkennung, Präferenzlernen, stärkerer Beziehungscharakter. Nur bei echter Wiederkehr und geklärtem Rechtsraum." vertex="1">
+          <mxGeometry height="120" width="560" x="2040" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="zuk3XkPT7rofp6i4jfUF-21" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="&lt;b style=&quot;text-align: left;&quot;&gt;Wissenschaftlicher Kurzbefund&lt;/b&gt;&lt;br style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;• Minimal soziale Hinweisreize reichen oft schon aus, um soziale Normen auszulösen.&lt;/span&gt;&lt;br style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;• Emotion + Markenrelevanz sind die stärksten Aufwertungs-Trigger zu Stufe 2.&lt;/span&gt;&lt;br style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;• Stufe 3 ist Spezialfall, nicht Default-Ziel.&lt;/span&gt;&lt;br style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;• KPI-Effekte von Persona sind nicht garantiert → im Zweifel konservativ wählen.&lt;/span&gt;" vertex="1">
+          <mxGeometry height="410" width="830" x="690" y="920" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="diag-22" name="01_Info">
+    <mxGraphModel dx="6823" dy="1873" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3400" pageHeight="2200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;" value="Zweig I · Informationsbot (F1 = A)" vertex="1">
+          <mxGeometry height="60" width="900" x="1110" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=center;verticalAlign=middle;" value="F1 = A&lt;br&gt;&lt;b&gt;Fragen beantworten&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="380" x="1370" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="25" parent="1" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=center;verticalAlign=middle;" value="F2&lt;br&gt;&lt;b&gt;Kanal?&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="360" x="1380" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=center;verticalAlign=middle;" value="A · Text" vertex="1">
+          <mxGeometry height="70" width="220" x="940" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;verticalAlign=top;" value="B · Voice&lt;br&gt;&lt;i&gt;Voice-Modifikator:&lt;br&gt;konservativer&lt;/i&gt;" vertex="1">
+          <mxGeometry height="90" width="240" x="1445" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=center;verticalAlign=middle;" value="C · Beides" vertex="1">
+          <mxGeometry height="70" width="220" x="1970" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="29" parent="1" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=center;verticalAlign=middle;" value="F6&lt;br&gt;&lt;b&gt;Markenrelevanz?&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="380" x="1370" y="559" as="geometry" />
+        </mxCell>
+        <mxCell id="30" edge="1" parent="1" source="24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="25" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="31" edge="1" parent="1" source="25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="26" value="A">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="32" edge="1" parent="1" source="25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="27" value="B">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="33" edge="1" parent="1" source="25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="28" value="C">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="34" edge="1" parent="1" source="26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;fontSize=11;" target="29" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1050" y="480" />
+              <mxPoint x="1560" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="35" edge="1" parent="1" source="27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;fontSize=11;exitX=0.477;exitY=0.979;exitDx=0;exitDy=0;exitPerimeter=0;" target="29" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="1565.1999999999998" y="519" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="36" edge="1" parent="1" source="28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;fontSize=11;" target="29" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2080" y="480" />
+              <mxPoint x="1560" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="37" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;dashed=1;align=left;verticalAlign=top;fontStyle=1;" value="I.3a · F6 = C (Marke nicht wichtig)" vertex="1">
+          <mxGeometry height="1001" width="1300" x="-410" y="709" as="geometry" />
+        </mxCell>
+        <mxCell id="38" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;dashed=1;align=left;verticalAlign=top;fontStyle=1;" value="I.3b · F6 = B (Marke schon wichtig)" vertex="1">
+          <mxGeometry height="980" width="1300" x="920" y="709" as="geometry" />
+        </mxCell>
+        <mxCell id="39" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;dashed=1;align=left;verticalAlign=top;fontStyle=1;" value="I.3c · F6 = A (Marke sehr wichtig)" vertex="1">
+          <mxGeometry height="980" width="1523" x="2337" y="709" as="geometry" />
+        </mxCell>
+        <mxCell id="40" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=center;verticalAlign=middle;" value="F6 = C" vertex="1">
+          <mxGeometry height="50" width="250" x="-90" y="749" as="geometry" />
+        </mxCell>
+        <mxCell id="41" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=center;verticalAlign=middle;" value="F6 = B" vertex="1">
+          <mxGeometry height="50" width="250" x="1435" y="749" as="geometry" />
+        </mxCell>
+        <mxCell id="42" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=center;verticalAlign=middle;" value="F6 = A" vertex="1">
+          <mxGeometry height="50" width="250" x="2968" y="749" as="geometry" />
+        </mxCell>
+        <mxCell id="43" edge="1" parent="1" source="29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="40" value="C">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="44" edge="1" parent="1" source="29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="41" value="B">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="45" edge="1" parent="1" source="29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="42" value="A">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="46" parent="1" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=center;verticalAlign=middle;" value="F7&lt;br&gt;&lt;b&gt;Persönlichkeitsgrad?&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="340" x="-135" y="839" as="geometry" />
+        </mxCell>
+        <mxCell id="47" edge="1" parent="1" source="40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="46" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="48" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#666666;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD I-1 · STUFE 0&lt;/b&gt;&lt;br&gt;F7=A System&lt;br&gt;&lt;br&gt;FAQ / Info ohne Markenbezug.&lt;br&gt;Rein funktional." vertex="1">
+          <mxGeometry height="140" width="280" x="-370" y="999" as="geometry" />
+        </mxCell>
+        <mxCell id="49" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD I-2 · STUFE 1&lt;/b&gt;&lt;br&gt;F7=B höflich-sachlich&lt;br&gt;&lt;br&gt;Standard-Info-Bot mit minimaler Persona." vertex="1">
+          <mxGeometry height="140" width="280" x="-60" y="999" as="geometry" />
+        </mxCell>
+        <mxCell id="50" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD I-3 · STUFE 1&lt;/b&gt;&lt;br&gt;F7=C Ansprechpartner&lt;br&gt;&lt;br&gt;Downgrade: ohne Markenrelevanz reicht oft Stufe 1." vertex="1">
+          <mxGeometry height="150" width="280" x="255" y="999" as="geometry" />
+        </mxCell>
+        <mxCell id="51" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD I-4 · STUFE 1&lt;/b&gt;&lt;br&gt;F7=D Begleiter&lt;br&gt;&lt;br&gt;Downgrade: Memory / Beziehung lohnt hier selten." vertex="1">
+          <mxGeometry height="150" width="280" x="560" y="999" as="geometry" />
+        </mxCell>
+        <mxCell id="52" edge="1" parent="1" source="46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="48" value="A">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="53" edge="1" parent="1" source="46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="49" value="B">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="54" edge="1" parent="1" source="46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="50" value="C">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="56" parent="1" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=center;verticalAlign=middle;" value="F7&lt;br&gt;&lt;b&gt;Persönlichkeitsgrad?&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="340" x="1389" y="839" as="geometry" />
+        </mxCell>
+        <mxCell id="57" edge="1" parent="1" source="41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="56" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="58" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#666666;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD I-5 · STUFE 0&lt;/b&gt;&lt;br&gt;F7=A System&lt;br&gt;&lt;br&gt;Hard-Lock auf Stufe 0." vertex="1">
+          <mxGeometry height="140" width="260" x="950" y="999" as="geometry" />
+        </mxCell>
+        <mxCell id="59" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD I-6 · STUFE 1&lt;/b&gt;&lt;br&gt;F7=B höflich-sachlich&lt;br&gt;&lt;br&gt;Markentragende einfache FAQ." vertex="1">
+          <mxGeometry height="140" width="260" x="1232" y="999" as="geometry" />
+        </mxCell>
+        <mxCell id="60" parent="1" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=center;verticalAlign=middle;" value="F4&lt;br&gt;&lt;b&gt;Emotionslage?&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="240" x="1860" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="61" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD I-7 · STUFE 1–2&lt;/b&gt;&lt;br&gt;F7=C + F4=A/B&lt;br&gt;&lt;br&gt;Grenzfall: je nach Markenanspruch." vertex="1">
+          <mxGeometry height="140" width="320" x="1820" y="1149" as="geometry" />
+        </mxCell>
+        <mxCell id="62" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD I-8 · STUFE 2&lt;/b&gt;&lt;br&gt;F7=C + F4=C/D&lt;br&gt;&lt;br&gt;Emotionale Anfragen → stärkere Persona." vertex="1">
+          <mxGeometry height="111" width="230" x="1960" y="1378" as="geometry" />
+        </mxCell>
+        <mxCell id="63" parent="1" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=center;verticalAlign=middle;" value="F13&lt;br&gt;&lt;b&gt;Wiedererkennung?&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="320" x="1400" y="1196" as="geometry" />
+        </mxCell>
+        <mxCell id="64" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD I-9 · STUFE 3&lt;/b&gt;&lt;br&gt;F7=D + F13=A/B&lt;br&gt;&lt;br&gt;Info-Bot mit echter Wiederkehr." vertex="1">
+          <mxGeometry height="150" width="260" x="1165" y="1339" as="geometry" />
+        </mxCell>
+        <mxCell id="65" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD I-10 · STUFE 2&lt;/b&gt;&lt;br&gt;F7=D + F13=C/D&lt;br&gt;&lt;br&gt;Deckel ohne Memory / Wiedererkennung." vertex="1">
+          <mxGeometry height="150" width="260" x="1571" y="1339" as="geometry" />
+        </mxCell>
+        <mxCell id="66" edge="1" parent="1" source="56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="58" value="A">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="67" edge="1" parent="1" source="56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="59" value="B">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="68" edge="1" parent="1" source="56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="60" value="C">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="69" edge="1" parent="1" source="56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="63" value="D">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1559" y="980" />
+              <mxPoint x="1560" y="980" />
+            </Array>
+            <mxPoint x="1494.9966666666671" y="929" as="sourcePoint" />
+            <mxPoint x="1454.9966666666671" y="1189" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="70" edge="1" parent="1" source="60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="61" value="A/B">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1980" y="1120" />
+              <mxPoint x="1980" y="1120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="71" edge="1" parent="1" source="60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="62" value="C/D">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2210" y="1005" />
+              <mxPoint x="2210" y="1310" />
+              <mxPoint x="2075" y="1310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="72" edge="1" parent="1" source="63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="64" value="A/B">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="73" edge="1" parent="1" source="63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="65" value="C/D">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="74" parent="1" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=center;verticalAlign=middle;" value="F7&lt;br&gt;&lt;b&gt;Persönlichkeitsgrad?&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="340" x="2922" y="839" as="geometry" />
+        </mxCell>
+        <mxCell id="75" edge="1" parent="1" source="42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="74" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="76" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD I-11 · STUFE 0 ⚠&lt;/b&gt;&lt;br&gt;F7=A trotz hoher Markenrelevanz&lt;br&gt;&lt;br&gt;Widerspruch F6/F7 ausgeben." vertex="1">
+          <mxGeometry height="150" width="280" x="2370" y="999" as="geometry" />
+        </mxCell>
+        <mxCell id="77" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD I-12 · STUFE 1&lt;/b&gt;&lt;br&gt;F7=B höflich-sachlich&lt;br&gt;&lt;br&gt;Marke sichtbar, aber zurückhaltend." vertex="1">
+          <mxGeometry height="150" width="280" x="2670" y="999" as="geometry" />
+        </mxCell>
+        <mxCell id="78" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD I-13 · STUFE 2&lt;/b&gt;&lt;br&gt;F7=C Ansprechpartner&lt;br&gt;&lt;br&gt;Starke Markenbotschaft im Infobot." vertex="1">
+          <mxGeometry height="150" width="280" x="3060" y="999" as="geometry" />
+        </mxCell>
+        <mxCell id="79" parent="1" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=center;verticalAlign=middle;" value="F13 + F10&lt;br&gt;&lt;b&gt;Memory &amp; sensible Themen?&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="300" x="3390" y="1019" as="geometry" />
+        </mxCell>
+        <mxCell id="80" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD I-14 · STUFE 3&lt;/b&gt;&lt;br&gt;F7=D + F13=A/B + F10=C&lt;br&gt;&lt;br&gt;Wiedererkennbarer Marken-Info-Bot." vertex="1">
+          <mxGeometry height="160" width="280" x="3190" y="1339" as="geometry" />
+        </mxCell>
+        <mxCell id="81" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD I-15 · STUFE 2&lt;/b&gt;&lt;br&gt;sonst&lt;br&gt;&lt;br&gt;Deckel durch fehlendes Memory oder Sensibilität." vertex="1">
+          <mxGeometry height="160" width="280" x="3570" y="1339" as="geometry" />
+        </mxCell>
+        <mxCell id="82" edge="1" parent="1" source="74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="76" value="A">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="83" edge="1" parent="1" source="74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="77" value="B">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="84" edge="1" parent="1" source="74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="78" value="C">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="85" edge="1" parent="1" source="74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="79" value="D">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="86" edge="1" parent="1" source="79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="80" value="ja">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="87" edge="1" parent="1" source="79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="81" value="sonst">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="M2bmWrwa1oGTcSidjOho-88" edge="1" parent="1" source="46" style="endArrow=classic;html=1;rounded=0;exitX=0.809;exitY=0.347;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="51" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="870" />
+            </Array>
+            <mxPoint x="290" y="810" as="sourcePoint" />
+            <mxPoint x="340" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M2bmWrwa1oGTcSidjOho-89" connectable="0" parent="M2bmWrwa1oGTcSidjOho-88" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="D" vertex="1">
+          <mxGeometry relative="1" x="-0.2322" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9GM4TUKN2fyf5fg0qGrs-88" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="&lt;b style=&quot;text-align: left;&quot;&gt;Fazit Zweig I&lt;/b&gt;&lt;br style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;Default konservativ: Stufe 0–1. Stufe 2 nur, wenn Marke oder emotionale Lage den &lt;br&gt;Zusatzaufwand rechtfertigen. Stufe 3 nur bei echter Wiederkehr und Erinnerung.&lt;/span&gt;" vertex="1">
+          <mxGeometry height="330" width="650" x="1220" y="1830" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="diag-89" name="02_Transaktion">
+    <mxGraphModel dx="5356" dy="1070" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3400" pageHeight="2200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="90" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;" value="Zweig II · Transaktionsbot (F1 = B)" vertex="1">
+          <mxGeometry height="60" width="900" x="1110" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="91" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=center;verticalAlign=middle;" value="F1 = B&lt;br&gt;&lt;b&gt;Vorgänge abwickeln&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="400" x="1360" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="92" parent="1" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=center;verticalAlign=middle;" value="F12&lt;br&gt;&lt;b&gt;Interaktionsdauer?&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="380" x="1370" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="93" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=center;verticalAlign=middle;" value="A · sehr kurz" vertex="1">
+          <mxGeometry height="70" width="220" x="910" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="94" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=center;verticalAlign=middle;" value="B · kurz" vertex="1">
+          <mxGeometry height="70" width="220" x="1450" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="95" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=center;verticalAlign=middle;" value="C/D · länger oder gemischt" vertex="1">
+          <mxGeometry height="70" width="250" x="1970" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="96" parent="1" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=center;verticalAlign=middle;" value="Kontext-Check&lt;br&gt;&lt;b&gt;F4 Emotion + F6 Marke&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="420" x="1350" y="617" as="geometry" />
+        </mxCell>
+        <mxCell id="97" edge="1" parent="1" source="91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="92" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="98" edge="1" parent="1" source="92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="93" value="A">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="99" edge="1" parent="1" source="93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;fontSize=11;" target="96" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="100" edge="1" parent="1" source="92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="94" value="B">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="101" edge="1" parent="1" source="94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;fontSize=11;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="96" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1560" y="567" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="102" edge="1" parent="1" source="92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="95" value="C/D">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="103" edge="1" parent="1" source="95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;dashed=1;fontSize=11;" target="96" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1560" y="485" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="104" parent="1" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=center;verticalAlign=middle;" value="F7&lt;br&gt;&lt;b&gt;Persönlichkeitsgrad?&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="400" x="1360" y="767" as="geometry" />
+        </mxCell>
+        <mxCell id="105" edge="1" parent="1" source="96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="104" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="106" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#666666;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD II-1 · STUFE 0&lt;/b&gt;&lt;br&gt;F7=A System&lt;br&gt;&lt;br&gt;Klassischer Termin-, Retouren- oder Status-Bot." vertex="1">
+          <mxGeometry height="150" width="300" x="-160" y="947" as="geometry" />
+        </mxCell>
+        <mxCell id="107" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=center;verticalAlign=middle;" value="F7=B&lt;br&gt;&lt;b&gt;→ prüfe F6 &amp; F4&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="300" x="500" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="108" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=center;verticalAlign=middle;" value="F7=C&lt;br&gt;&lt;b&gt;→ prüfe F6&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="300" x="1410" y="970" as="geometry" />
+        </mxCell>
+        <mxCell id="109" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=center;verticalAlign=middle;" value="F7=D&lt;br&gt;&lt;b&gt;→ prüfe F5 &amp; F13&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="320" x="2120" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="110" edge="1" parent="1" source="104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="106" value="A">
+          <mxGeometry relative="1" x="0.858" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="111" edge="1" parent="1" source="104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="107" value="B">
+          <mxGeometry relative="1" x="0.6958" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="112" edge="1" parent="1" source="104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="108" value="C">
+          <mxGeometry relative="1" x="0.3588" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="113" edge="1" parent="1" source="104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="109" value="D">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="114" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD II-2 · STUFE 1&lt;/b&gt;&lt;br&gt;F6=C nicht wichtig&lt;br&gt;&lt;br&gt;Neutraler Transaktionsbot." vertex="1">
+          <mxGeometry height="140" width="240" x="470" y="1127" as="geometry" />
+        </mxCell>
+        <mxCell id="115" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD II-3 · STUFE 1&lt;/b&gt;&lt;br&gt;F6=A/B + F4=A/B&lt;br&gt;&lt;br&gt;Marke sichtbar, aber Funktion dominiert." vertex="1">
+          <mxGeometry height="150" width="240" x="730" y="1127" as="geometry" />
+        </mxCell>
+        <mxCell id="116" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD II-4 · STUFE 2&lt;/b&gt;&lt;br&gt;F6=A/B + F4=C/D&lt;br&gt;&lt;br&gt;Emotionale Transaktion → stärkere Persona." vertex="1">
+          <mxGeometry height="150" width="240" x="210" y="1127" as="geometry" />
+        </mxCell>
+        <mxCell id="117" edge="1" parent="1" source="107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="114" value="F6=C">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="118" edge="1" parent="1" source="107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="115" value="F6=A/B + F4=A/B">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="119" edge="1" parent="1" source="107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="116" value="F6=A/B + F4=C/D">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="120" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD II-5 · STUFE 1&lt;/b&gt;&lt;br&gt;F6=C nicht wichtig&lt;br&gt;&lt;br&gt;Downgrade: Ansprechpartner ohne Markenbedarf." vertex="1">
+          <mxGeometry height="150" width="260" x="1160" y="1127" as="geometry" />
+        </mxCell>
+        <mxCell id="121" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD II-6 · STUFE 2&lt;/b&gt;&lt;br&gt;F6=A/B wichtig&lt;br&gt;&lt;br&gt;Markentragender Transaktionsbot." vertex="1">
+          <mxGeometry height="150" width="260" x="1650" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="122" edge="1" parent="1" source="108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="120" value="F6=C">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="123" edge="1" parent="1" source="108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="121" value="F6=A/B">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="124" parent="1" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=center;verticalAlign=middle;" value="F5 + F13&lt;br&gt;&lt;b&gt;Wie häufig + Erinnerung?&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="270" x="2145" y="1097" as="geometry" />
+        </mxCell>
+        <mxCell id="125" edge="1" parent="1" source="109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="124" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="126" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD II-7 · STUFE 3&lt;/b&gt;&lt;br&gt;F5=C/D + F13=A/B&lt;br&gt;&lt;br&gt;Wiederkehrende Transaktionen mit Memory." vertex="1">
+          <mxGeometry height="160" width="260" x="1850" y="1289" as="geometry" />
+        </mxCell>
+        <mxCell id="127" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD II-8 · STUFE 2&lt;/b&gt;&lt;br&gt;F5=A/B&lt;br&gt;&lt;br&gt;Einmalige oder seltene Transaktion." vertex="1">
+          <mxGeometry height="150" width="260" x="2150" y="1289" as="geometry" />
+        </mxCell>
+        <mxCell id="128" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD II-9 · STUFE 2&lt;/b&gt;&lt;br&gt;F13=C/D&lt;br&gt;&lt;br&gt;Deckel ohne Wiedererkennung." vertex="1">
+          <mxGeometry height="150" width="260" x="2450" y="1289" as="geometry" />
+        </mxCell>
+        <mxCell id="129" edge="1" parent="1" source="124" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="126" value="häufig + ja">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="130" edge="1" parent="1" source="124" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="127" value="selten">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="131" edge="1" parent="1" source="124" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="128" value="nein / Datenschutz">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Mu2ObuqS3idUbx0C-b5a-132" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="&lt;b style=&quot;text-align: left;&quot;&gt;Fazit Zweig II&lt;/b&gt;&lt;br style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;Transaktionen sind effizienzgetrieben. Default: Stufe 0–1. Stufe 2 nur bei emotionalen oder&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-align: left;&quot;&gt;stark markenrelevanten Vorgängen. Stufe 3 lohnt nur bei echter Wiederkehr und nützlicher Erinnerung.&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="371" width="790" x="770" y="1460" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="diag-133" name="03_Beratung">
+    <mxGraphModel dx="1956" dy="1070" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3400" pageHeight="2200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="134" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;" value="Zweig III · Beratungsbot (F1 = C)" vertex="1">
+          <mxGeometry height="60" width="900" x="1110" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="135" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=center;verticalAlign=middle;" value="F1 = C&lt;br&gt;&lt;b&gt;Beraten&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="400" x="1360" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="136" parent="1" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=center;verticalAlign=middle;" value="F7&lt;br&gt;&lt;b&gt;Persönlichkeitsgrad?&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="380" x="1370" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="137" edge="1" parent="1" source="135" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="136" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="138" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD III-1 · STUFE 0 ⚠&lt;/b&gt;&lt;br&gt;F7=A System&lt;br&gt;&lt;br&gt;Beratung + System ist ein Widerspruch. Empfehlung überdenken." vertex="1">
+          <mxGeometry height="160" width="320" x="10" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="139" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=center;verticalAlign=middle;" value="F7=B höflich-sachlich&lt;br&gt;&lt;b&gt;→ prüfe F6 + F4&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="320" x="540" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="140" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=center;verticalAlign=middle;" value="F7=C Ansprechpartner&lt;br&gt;&lt;b&gt;→ prüfe F5 + F13&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="320" x="1400" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="141" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=center;verticalAlign=middle;" value="F7=D Begleiter&lt;br&gt;&lt;b&gt;→ prüfe F10 + F13&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="320" x="2260" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="142" edge="1" parent="1" source="136" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="138" value="A">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="143" edge="1" parent="1" source="136" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="139" value="B">
+          <mxGeometry relative="1" x="0.6644" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="144" edge="1" parent="1" source="136" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="140" value="C">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="145" edge="1" parent="1" source="136" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="141" value="D">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="146" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD III-2 · STUFE 1&lt;/b&gt;&lt;br&gt;F6=C nicht wichtig&lt;br&gt;&lt;br&gt;Randfall: Beratung ohne Markenbezug." vertex="1">
+          <mxGeometry height="150" width="240" x="360" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="147" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD III-3 · STUFE 2&lt;/b&gt;&lt;br&gt;F6=A/B + F4=A/B&lt;br&gt;&lt;br&gt;Markentragende Beratung." vertex="1">
+          <mxGeometry height="150" width="240" x="630" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="148" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD III-4 · STUFE 2&lt;/b&gt;&lt;br&gt;F6=A/B + F4=C/D&lt;br&gt;&lt;br&gt;Empathische Beratung." vertex="1">
+          <mxGeometry height="150" width="240" x="900" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="149" edge="1" parent="1" source="139" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="146" value="F6=C">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="150" edge="1" parent="1" source="139" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="147" value="F6=A/B + F4=A/B">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="750" y="620" />
+              <mxPoint x="750" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="151" edge="1" parent="1" source="139" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="148" value="F6=A/B + F4=C/D">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="152" parent="1" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=center;verticalAlign=middle;" value="F5&lt;br&gt;&lt;b&gt;Nutzungsfrequenz?&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="320" x="1400" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="153" edge="1" parent="1" source="140" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="152" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="154" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD III-5 · STUFE 2&lt;/b&gt;&lt;br&gt;F5=A einmalig&lt;br&gt;&lt;br&gt;Einmalige Beratung." vertex="1">
+          <mxGeometry height="150" width="240" x="1140" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="155" parent="1" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=center;verticalAlign=middle;" value="F13&lt;br&gt;&lt;b&gt;Wiedererkennung?&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="240" x="1440" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="156" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD III-11 · STUFE 3&lt;/b&gt;&lt;br&gt;F5=D ständig&lt;br&gt;&lt;br&gt;Begleitende Nutzung erfordert Beziehung." vertex="1">
+          <mxGeometry height="150" width="240" x="1860" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="157" edge="1" parent="1" source="152" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="154" value="A">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="158" edge="1" parent="1" source="152" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="155" value="B/C">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="159" edge="1" parent="1" source="152" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="156" value="D">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="160" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD III-6 · STUFE 2+&lt;/b&gt;&lt;br&gt;F5=B + F13=A/B&lt;br&gt;&lt;br&gt;Optionale Erinnerung." vertex="1">
+          <mxGeometry height="150" width="220" x="1120" y="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="161" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD III-7 · STUFE 2&lt;/b&gt;&lt;br&gt;F5=B + F13=C/D&lt;br&gt;&lt;br&gt;Gelegentliche Beratung ohne Memory." vertex="1">
+          <mxGeometry height="150" width="220" x="1720" y="1140" as="geometry" />
+        </mxCell>
+        <mxCell id="162" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD III-8 · STUFE 3&lt;/b&gt;&lt;br&gt;F5=C + F13=A&lt;br&gt;&lt;br&gt;Regelmäßige Beratung mit Erinnerung." vertex="1">
+          <mxGeometry height="150" width="220" x="1950" y="1230" as="geometry" />
+        </mxCell>
+        <mxCell id="163" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD III-9 · STUFE 3&lt;/b&gt;&lt;br&gt;F5=C + F13=B&lt;br&gt;&lt;br&gt;Memory empfohlen." vertex="1">
+          <mxGeometry height="150" width="220" x="1310" y="1370" as="geometry" />
+        </mxCell>
+        <mxCell id="164" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD III-10 · STUFE 2&lt;/b&gt;&lt;br&gt;F5=C + F13=C/D&lt;br&gt;&lt;br&gt;Deckel ohne Erinnerung." vertex="1">
+          <mxGeometry height="150" width="220" x="1620" y="1360" as="geometry" />
+        </mxCell>
+        <mxCell id="165" edge="1" parent="1" source="155" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="160" value="F5=B + A/B">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="166" edge="1" parent="1" source="155" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="161" value="F5=B + C/D">
+          <mxGeometry relative="1" x="0.6735" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="167" edge="1" parent="1" source="155" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="162" value="F5=C + A">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1800" y="1195.0769230769229" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="168" edge="1" parent="1" source="155" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="163" value="F5=C + B">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="169" edge="1" parent="1" source="155" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="164" value="F5=C + C/D">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1560" y="1240" />
+              <mxPoint x="1620" y="1240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="170" parent="1" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=center;verticalAlign=middle;" value="F10 + F13&lt;br&gt;&lt;b&gt;Sensible Themen &amp; Erinnerung?&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="340" x="2250" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="171" edge="1" parent="1" source="141" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="170" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="172" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD III-12 · STUFE 2&lt;/b&gt;&lt;br&gt;F10=A regelmäßig sensibel&lt;br&gt;&lt;br&gt;Deckel durch Rechtsraum." vertex="1">
+          <mxGeometry height="160" width="240" x="2190" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="173" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD III-13 · STUFE 3&lt;/b&gt;&lt;br&gt;F10=B + F13=A/B&lt;br&gt;&lt;br&gt;Data-Minimization nötig." vertex="1">
+          <mxGeometry height="160" width="240" x="2460" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="174" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD III-14 · STUFE 2&lt;/b&gt;&lt;br&gt;F10=B + F13=C/D&lt;br&gt;&lt;br&gt;Deckel ohne Memory." vertex="1">
+          <mxGeometry height="160" width="240" x="2730" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="175" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD III-15 · STUFE 3&lt;/b&gt;&lt;br&gt;F10=C + F13=A/B&lt;br&gt;&lt;br&gt;Voll adaptive Beratung." vertex="1">
+          <mxGeometry height="160" width="240" x="2460" y="1090" as="geometry" />
+        </mxCell>
+        <mxCell id="176" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD III-16 · STUFE 2&lt;/b&gt;&lt;br&gt;F10=C + F13=C/D&lt;br&gt;&lt;br&gt;Deckel ohne Wiedererkennung." vertex="1">
+          <mxGeometry height="160" width="240" x="2730" y="1090" as="geometry" />
+        </mxCell>
+        <mxCell id="177" edge="1" parent="1" source="170" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="172" value="F10=A">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="178" edge="1" parent="1" source="170" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="173" value="F10=B + A/B">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="179" edge="1" parent="1" source="170" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="174" value="F10=B + C/D">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="180" edge="1" parent="1" source="170" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="175" value="F10=C + A/B">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="181" edge="1" parent="1" source="170" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="176" value="F10=C + C/D">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iba9eGXIdv3Bu6C7WvpI-182" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="&lt;b style=&quot;text-align: left;&quot;&gt;Fazit Zweig III&lt;/b&gt;&lt;br style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;Beratung ist dialogisch. Default: Stufe 2. Stufe 3 nur, wenn Wiederkehr, Wiedererkennung&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-align: left;&quot;&gt;und Rechtsraum wirklich geklärt sind. Stufe 0 fast nie sinnvoll.&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="371" width="790" x="1170" y="1620" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="diag-183" name="04_Support">
+    <mxGraphModel dx="3423" dy="1873" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3400" pageHeight="2200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="184" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;" value="Zweig IV · Support / Beschwerde (F1 = D)" vertex="1">
+          <mxGeometry height="60" width="900" x="1110" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="185" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=center;verticalAlign=middle;" value="F1 = D&lt;br&gt;&lt;b&gt;Beschwerden &amp; Support&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="400" x="1610" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="186" parent="1" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=center;verticalAlign=middle;" value="F7&lt;br&gt;&lt;b&gt;Persönlichkeitsgrad?&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="380" x="1620" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="187" edge="1" parent="1" source="185" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="186" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="188" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD IV-1 · STUFE 0 ⚠&lt;/b&gt;&lt;br&gt;F7=A System&lt;br&gt;&lt;br&gt;Für Support i. d. R. nicht empfohlen." vertex="1">
+          <mxGeometry height="160" width="320" x="140" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="189" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=center;verticalAlign=middle;" value="F7=B höflich-sachlich&lt;br&gt;&lt;b&gt;→ prüfe F4&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="300" x="640" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="190" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=center;verticalAlign=middle;" value="F7=C Ansprechpartner&lt;br&gt;&lt;b&gt;→ prüfe F2 / F4&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="320" x="1430" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="191" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;align=center;verticalAlign=middle;" value="F7=D Begleiter&lt;br&gt;&lt;b&gt;→ prüfe F5 / F10 / F13&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="340" x="1980" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="192" edge="1" parent="1" source="186" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="188" value="A">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="193" edge="1" parent="1" source="186" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="189" value="B">
+          <mxGeometry relative="1" x="0.6433" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="194" edge="1" parent="1" source="186" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="190" value="C">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="195" edge="1" parent="1" source="186" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="191" value="D">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="196" parent="1" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=center;verticalAlign=middle;" value="F4&lt;br&gt;&lt;b&gt;Emotionslage?&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="280" x="650" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="197" edge="1" parent="1" source="189" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="196" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="198" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD IV-2 · STUFE 1&lt;/b&gt;&lt;br&gt;F4=A entspannt" vertex="1">
+          <mxGeometry height="120" width="170" x="380" y="865" as="geometry" />
+        </mxCell>
+        <mxCell id="199" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD IV-3 · STUFE 1&lt;/b&gt;&lt;br&gt;F4=B neutral" vertex="1">
+          <mxGeometry height="120" width="170" x="580" y="865" as="geometry" />
+        </mxCell>
+        <mxCell id="200" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD IV-4 · STUFE 2&lt;/b&gt;&lt;br&gt;F4=C frustriert&lt;br&gt;&lt;br&gt;Empathie indirekt." vertex="1">
+          <mxGeometry height="140" width="190" x="800" y="865" as="geometry" />
+        </mxCell>
+        <mxCell id="201" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD IV-5 · STUFE 2&lt;/b&gt;&lt;br&gt;F4=D gemischt" vertex="1">
+          <mxGeometry height="120" width="170" x="1010" y="865" as="geometry" />
+        </mxCell>
+        <mxCell id="202" edge="1" parent="1" source="196" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="198" value="A">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="203" edge="1" parent="1" source="196" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="199" value="B">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="204" edge="1" parent="1" source="196" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="200" value="C">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="205" edge="1" parent="1" source="196" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="201" value="D">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="206" parent="1" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=center;verticalAlign=middle;" value="F2&lt;br&gt;&lt;b&gt;Kanal?&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="260" x="1460" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="207" edge="1" parent="1" source="190" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="206" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="208" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD IV-6 · STUFE 2&lt;/b&gt;&lt;br&gt;Text-Support" vertex="1">
+          <mxGeometry height="120" width="180" x="1310" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="209" parent="1" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=center;verticalAlign=middle;" value="F4&lt;br&gt;&lt;b&gt;Emotionslage?&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="180" x="1550" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="210" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD IV-9 · STUFE 2&lt;/b&gt;&lt;br&gt;Beides / Multimodal" vertex="1">
+          <mxGeometry height="120" width="200" x="1760" y="845" as="geometry" />
+        </mxCell>
+        <mxCell id="211" edge="1" parent="1" source="206" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="208" value="A Text">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="212" edge="1" parent="1" source="206" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="209" value="B Voice">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="213" edge="1" parent="1" source="206" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="210" value="C Beides">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="214" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD IV-7 · STUFE 2&lt;/b&gt;&lt;br&gt;Voice + F4=A/B&lt;br&gt;&lt;br&gt;Paraverbale Gestaltung." vertex="1">
+          <mxGeometry height="140" width="200" x="1470" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="215" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD IV-8 · STUFE 2&lt;/b&gt;&lt;br&gt;Voice + F4=C/D&lt;br&gt;&lt;br&gt;&lt;b&gt;Lena-Pfad&lt;/b&gt;" vertex="1">
+          <mxGeometry height="140" width="200" x="1700" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="216" edge="1" parent="1" source="209" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="214" value="A/B">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="217" edge="1" parent="1" source="209" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="215" value="C/D">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="218" parent="1" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=center;verticalAlign=middle;" value="F5&lt;br&gt;&lt;b&gt;Nutzungsfrequenz?&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="260" x="2270" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="219" edge="1" parent="1" source="191" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="218" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="220" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD IV-10 · STUFE 2&lt;/b&gt;&lt;br&gt;F5=A einmalig&lt;br&gt;&lt;br&gt;Begleiterwunsch passt schlecht." vertex="1">
+          <mxGeometry height="140" width="200" x="2120" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="221" parent="1" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=center;verticalAlign=middle;" value="F10 + F13&lt;br&gt;&lt;b&gt;Sensible Themen &amp; Erinnerung?&lt;/b&gt;" vertex="1">
+          <mxGeometry height="100" width="260" x="2380" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="222" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD IV-14 · STUFE 3&lt;/b&gt;&lt;br&gt;F5=D ständig&lt;br&gt;&lt;br&gt;Interner / Account-Support." vertex="1">
+          <mxGeometry height="150" width="200" x="2870" y="855" as="geometry" />
+        </mxCell>
+        <mxCell id="223" edge="1" parent="1" source="218" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="220" value="A">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="224" edge="1" parent="1" source="218" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="221" value="B/C">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="225" edge="1" parent="1" source="218" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="222" value="D">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="226" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD IV-11 · STUFE 2&lt;/b&gt;&lt;br&gt;F10=A + F13=A/B&lt;br&gt;&lt;br&gt;Deckel Hochrisiko." vertex="1">
+          <mxGeometry height="150" width="200" x="2250" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="227" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD IV-12 · STUFE 3&lt;/b&gt;&lt;br&gt;F10=B/C + F13=A/B&lt;br&gt;&lt;br&gt;Support mit Historie." vertex="1">
+          <mxGeometry height="150" width="200" x="2480" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="228" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;PFAD IV-13 · STUFE 2&lt;/b&gt;&lt;br&gt;F13=C/D&lt;br&gt;&lt;br&gt;Deckel ohne Erinnerung." vertex="1">
+          <mxGeometry height="150" width="200" x="2710" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="229" edge="1" parent="1" source="221" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="226" value="sensibel + ja">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="230" edge="1" parent="1" source="221" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="227" value="nicht sensibel + ja">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="231" edge="1" parent="1" source="221" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontSize=11;" target="228" value="nein / Datenschutz">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ys0LFPMxkC5Dg05WnkZF-232" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="&lt;b style=&quot;text-align: left;&quot;&gt;Fazit Zweig IV&lt;/b&gt;&lt;br style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;Support braucht fast immer mindestens kalibrierte Höflichkeit; häufig Stufe 2.&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-align: left;&quot;&gt;Empathie indirekt: Tonalität, Tempo, schnelle Lösung, klare Eskalation.&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;text-align: left;&quot;&gt;Stufe 3 nur bei echter Wiederkehr / Historie.&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="371" width="790" x="1290" y="1290" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="diag-233" name="05_Modifikatoren">
+    <mxGraphModel dx="2282" dy="1248" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3400" pageHeight="2200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="234" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=18;align=center;verticalAlign=middle;" value="Modifikatoren nach der Stufenwahl" vertex="1">
+          <mxGeometry height="60" width="900" x="1110" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="235" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;" value="&lt;b&gt;F3 · Zielgruppe&lt;/b&gt;&lt;br&gt;A jung, digital affin → lockerer, Emojis möglich, Duzen denkbar&lt;br&gt;B breite Öffentlichkeit → neutral, sparsame Emojis, eher Siezen&lt;br&gt;C älter / weniger technikaffin → kurze Sätze, wenige Fachbegriffe, sichtbare Hilfe&lt;br&gt;D Fachpublikum → höhere Informationsdichte, Fachbegriffe ok" vertex="1">
+          <mxGeometry height="240" width="620" x="60" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="236" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;F8 · Schnell vs. gut behandelt&lt;/b&gt;&lt;br&gt;A schnell → kurze Antworten, wenige Floskeln&lt;br&gt;B gut behandelt → etwas mehr Beziehung / Begrüßung&lt;br&gt;C beides → Balance" vertex="1">
+          <mxGeometry height="180" width="500" x="730" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="237" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;verticalAlign=top;" value="&lt;b&gt;F9 · Eskalation&lt;/b&gt;&lt;br&gt;A sofort → niedrige Schwelle, aber Nutzen des CAs sinkt&lt;br&gt;B erst anders helfen → Standardpfad mit klaren Triggern&lt;br&gt;C Grenzen nennen + andere Kanäle → gut für Info-Fälle&lt;br&gt;D kein Fallback → Warnung vor Endlos-Loops" vertex="1">
+          <mxGeometry height="210" width="520" x="1270" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="238" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;verticalAlign=top;" value="&lt;b&gt;F10 · Sensible Themen&lt;/b&gt;&lt;br&gt;A regelmäßig → strikte Transparenz, Vorsicht bei Memory / Sentiment-Analyse&lt;br&gt;B gelegentlich → Memory nur mit klaren Regeln / Einwilligung&lt;br&gt;C selten → Standard" vertex="1">
+          <mxGeometry height="190" width="520" x="1830" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="239" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;verticalAlign=top;" value="&lt;b&gt;F11 · Projektstand&lt;/b&gt;&lt;br&gt;A Planung → volle Konzeption&lt;br&gt;B verbessern → Fokus auf Problemstellen&lt;br&gt;C feinjustieren → Persona-Tuning / Stil / Eskalationslogik" vertex="1">
+          <mxGeometry height="170" width="500" x="2390" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="240" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#666666;align=left;verticalAlign=top;" value="&lt;b&gt;Stufe 0 · Gestaltungsfazit&lt;/b&gt;&lt;br&gt;• Keine menschliche Inszenierung nötig&lt;br&gt;• Klare KI-Kennzeichnung reicht&lt;br&gt;• Sprache nüchtern, kurz, fehlerarm&lt;br&gt;• Besonders passend bei Standard-FAQ, Status, Buchung" vertex="1">
+          <mxGeometry height="190" width="620" x="80" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="241" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;verticalAlign=top;" value="&lt;b&gt;Stufe 1 · Gestaltungsfazit&lt;/b&gt;&lt;br&gt;• Name + freundliche Begrüßung + transparente KI-Rolle&lt;br&gt;• Sachlich, höflich, nicht zu gesprächig&lt;br&gt;• Gute Default-Stufe für viele kundennahe Fälle" vertex="1">
+          <mxGeometry height="180" width="620" x="760" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="242" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;verticalAlign=top;" value="&lt;b&gt;Stufe 2 · Gestaltungsfazit&lt;/b&gt;&lt;br&gt;• Konsistente Markenstimme, bewusstes Wording, situative Anpassung&lt;br&gt;• Empathie über Tonalität und Lösungsorientierung, nicht über gespielte Gefühle&lt;br&gt;• Klare Eskalationsgrenzen und Erwartungsmanagement" vertex="1">
+          <mxGeometry height="200" width="620" x="1440" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="243" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;verticalAlign=top;" value="&lt;b&gt;Stufe 3 · Gestaltungsfazit&lt;/b&gt;&lt;br&gt;• Nur sinnvoll bei echter Wiederkehr und erkennbarem Mehrwert&lt;br&gt;• Wiedererkennung, Präferenzlernen, Historie / Memory&lt;br&gt;• Datenschutz, Transparenz und menschliche Aufsicht müssen geklärt sein" vertex="1">
+          <mxGeometry height="200" width="620" x="2120" y="430" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="legend" name="99_Legende">
+    <mxGraphModel dx="1600" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="2200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="leg_100" value="Legende zum Entscheidungsmodell" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=20;align=center;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="1200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_101" value="Diese Seite erklärt die Symbole, Farben und Regeln, die in den Zweigen 01–05 verwendet werden. Sie ist unabhängig von den Zweigen und dient als Referenz." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=12;align=center;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="1200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_102" value="1 · Formen" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;align=center;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="170" width="300" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_103" value="F?&#xa;Entscheidungsfrage" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;align=center;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="230" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_104" value="Raute · Entscheidungsknoten&#xa;Enthält eine der 13 Fragen aus dem Fragebogen. Aus ihr gehen Antwortpfade heraus." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=11;align=left;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="200" y="230" width="500" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_105" value="A · Antwortoption" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;align=center;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="40" y="330" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_106" value="Helles Rechteck · Antwortoption&#xa;Zeigt eine konkrete Antwort auf die vorhergehende Frage." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=11;align=left;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="200" y="330" width="500" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_107" value="PFAD X-Y · STUFE n&#xa;Empfehlungstext" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;align=center;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="410" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_108" value="Gerundetes Rechteck · Endknoten (Pfad-Ergebnis)&#xa;Empfehlung am Ende eines Pfads. Farbe zeigt die empfohlene Persona-Stufe (siehe Sektion 2 unten). Enthält Pfad-ID, Stufe und Kurz-Empfehlung." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=11;align=left;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="200" y="410" width="500" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_109" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="40" y="520.0" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_110" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="170" y="520.0" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_111" value="A · Text" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=classic;endFill=1;strokeColor=#333333;fontSize=11;" edge="1" parent="1" source="leg_109" target="leg_110">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_112" value="Pfeil · Entscheidungspfad&#xa;Verbindet Frage → Antwort → Folgefrage bzw. Endknoten. Die Beschriftung nennt die Antwortoption (z. B. „A · Text“)." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=11;align=left;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="200" y="510" width="500" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_113" value="2 · Persona-Stufen (Endknoten-Farben)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;align=center;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="630" width="600" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_114" value="Stufe 0 · Ohne Persona" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#666666;fontSize=12;align=center;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="690" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_115" value="Rein funktional. Kein Name, neutraler Stil, nur Systemidentität. Sinnvoll bei rein transaktionalen Fällen, wo Persönlichkeit keinen Mehrwert bringt." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=11;align=left;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="340" y="690" width="900" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_116" value="Stufe 1 · Minimale Persona" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;align=center;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="790" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_117" value="Name + KI-Kennzeichnung + höflicher Grundton. Media-Equation-Effekt: minimale Reize reichen oft aus. Default-Empfehlung im Zweifel." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=11;align=left;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="340" y="790" width="900" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_118" value="Stufe 2 · Ausgeprägte Persona" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;align=center;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="890" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_119" value="Definierter Sprachstil, Corporate Identity, kalibrierte Empathie. Für Beratung, Support, markenrelevante Interaktion." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=11;align=left;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="340" y="890" width="900" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_120" value="Stufe 3 · Voll adaptive Persona" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;align=center;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="990" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_121" value="Persistente Wiedererkennung, Präferenzlernen, Beziehungscharakter. Nur bei regelmäßiger Nutzung, Memory-Wunsch und geklärtem Rechtsraum." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=11;align=left;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="340" y="990" width="900" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_122" value="3 · Hinweis- und Regelfarben" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;align=center;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1120" width="500" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_123" value="⚠ Warnung / Widerspruch" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;align=center;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1180" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_124" value="Rot markiert. Erscheint an Pfaden mit logischem Widerspruch (z. B. F1=Beratung + F7=System) oder an permanenten Hinweisen wie „Funktion vor Persona“." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=11;align=left;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="340" y="1180" width="900" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_125" value="Dominanz- / KO-Regel · Modifikator" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;align=center;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1270" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_126" value="Orange markiert. Kennzeichnet Regeln, die einzelne Pfade überschreiben (z. B. F7=A → Hard-Lock Stufe 0) oder Modifikatoren, die Ausgestaltung innerhalb einer Stufe ändern." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=11;align=left;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="340" y="1270" width="900" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_127" value="Titel- / Intro-Block" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;align=center;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1360" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_128" value="Blau markiert. Überschriften, Zweig-Einleitungen und übergeordnete Erklärtexte." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=11;align=left;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="340" y="1360" width="900" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_129" value="4 · Pfad-IDs lesen" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;align=center;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1480" width="400" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_130" value="Beispiel · PFAD IV-8 · STUFE 2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;align=center;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1540" width="400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_131" value="Die Pfad-ID besteht aus drei Teilen:&#xa;&#xa;• Römische Ziffer (I–IV) = Zweig · I=Info, II=Transaktion, III=Beratung, IV=Support&#xa;• Arabische Ziffer = laufende Nummer innerhalb des Zweigs&#xa;• STUFE 0–3 = empfohlene Persona-Stufe (Farbe entspricht Sektion 2)&#xa;&#xa;Beispiel IV-8 = Zweig Support, Pfad Nr. 8, Stufe 2 (= Lena-Pfad aus dem Konzeptionstext)." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=11;align=left;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1540" width="780" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_132" value="5 · Rolle der 13 Fragen" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;align=center;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1740" width="400" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_133" value="Stufen-relevant (bilden die Stufe)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;align=center;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1800" width="400" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_134" value="F1 Hauptaufgabe · F2 Kanal · F4 Emotionslage · F5 Nutzungsfrequenz · F6 Markenrelevanz · F7 Persönlichkeitsgrad · F12 Interaktionsdauer · F13 Wiedererkennung" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=11;align=left;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1850" width="600" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_135" value="Modifikatoren (nur Ausgestaltung)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;align=center;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="1800" width="400" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_136" value="F3 Zielgruppe · F8 Schnell vs. gut behandelt · F9 Eskalation · F10 Sensible Themen · F11 Projektstand" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=11;align=left;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="660" y="1850" width="580" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_137" value="6 · Abkürzungen in Belegen" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;align=center;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1950" width="400" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_138" value="Experteninterviews" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;align=center;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="2010" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_139" value="E1 bis E14 = Experten 1 bis 14 aus dem qualitativen Teil (Arbeitspaket 2). Zitate sind kursiv und mit Experten-Nummer in Klammern markiert." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=11;align=left;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="40" y="2060" width="600" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_140" value="Literatur (AP 1)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;align=center;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="2010" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_141" value="Autor (Jahr). Zentrale Werke: Völkel (2022), Mehri et al. (2026), Chhikara et al. (2025), Kim et al. (2019), de Gennaro et al. (2020), Silva &amp; Canedo (2023)." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=11;align=left;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="660" y="2060" width="580" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_142" value="Regulatorisch" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;align=center;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="2150" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="leg_143" value="EU-KI-VO = EU-Verordnung 2024/1689 (KI-Verordnung), mit Artikel-Nummer. DSGVO = Datenschutz-Grundverordnung." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#cccccc;fontSize=11;align=left;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="40" y="2200" width="1200" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
